@@ -11,6 +11,7 @@ let cacheObject = {
         delete cacheObject.data[pageNo];
         return !cacheObject.checkData(pageNo);
     },
+    
     getData: function(pageNo){
         let result = cacheObject.data[pageNo.toString()];
         return result;
